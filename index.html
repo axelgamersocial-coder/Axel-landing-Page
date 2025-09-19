@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axel - Plataforma Social para Gamers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="images/logo1.png" alt="Logo Axel">
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="btn">Entrar</a>
+    </div>
+  </header>
+
+  <!-- Seção Principal -->
+  <section class="store-buttons">
+    <div class="store-buttons text">
+      <h1>A Plataforma Social Definitiva para Gamers</h1>
+    <h2>Conecte-se. Jogue. Compartilhe.</h2>
+    <div class="buttons">
+      <a href="#" class="btn disabled">Em breve</a>
+        </a>
+      </div>
+    </div>
+
+    <section class="cta">
+  <h2>Cadastre-se grátis</h2>
+  <p>Garanta seu badge Founders e seja o primeiro a participar do BETA 🚀</p>
+  
+  <form 
+    action="https://gmail.us3.list-manage.com/subscribe/post?u=9feb5d2842f9e33c7a5e1bd43&amp;id=a1779e68ea&amp;f_id=00cc2ae2f0" method
+    method="post" 
+    target="_blank" 
+    novalidate
+    class="signup-form"
+  >
+    <input 
+      type="email" 
+      name="EMAIL" 
+      placeholder="Digite seu e-mail" 
+      required
+    >
+    <button type="submit">Quero receber</button>
+  </form>
+</section>
+
+    
+  </section>
+  
+
+  <!-- Funcionalidades -->
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>🎯 Feed & Perfis</h3>
+      <p>Fique atualizado com seus jogos favoritos e estatísticas de jogador.</p>
+    </div>
+    <div class="feature">
+      <h3>💬 Comunidades & Chat</h3>
+      <p>Participe de canais exclusivos e conecte-se com outros jogadores.</p>
+    </div>
+    <div class="feature">
+      <h3>📰 Notícias & Atualizações</h3>
+      <p>Receba notícias de jogos e recomendações personalizadas.</p>
+    </div>
+    <div class="feature">
+      <h3>🏆 Desafios & Conquistas</h3>
+      <p>Acompanhe seu progresso e mostre suas vitórias.</p>
+    </div>
+  </section>
+
+  <!-- Chamada para Ação -->
+  <section id="download" class="cta">
+    <h2>Pronto para entrar no futuro dos games?</h2>
+    <p>Faça parte da Axel hoje mesmo.</p>
+    <a href="#" class="btn">Cadastre-se Grátis</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Axel. Todos os direitos reservados.</p>
+    <div class="socials">
+      <a href="#">Discord</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    let lastScroll = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll) {
+        // Rolando para baixo → esconde
+        header.style.top = "-100px";
+      } else {
+        // Rolando para cima → mostra
+        header.style.top = "0";
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+</html>

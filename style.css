@@ -1,0 +1,321 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  color: #fff;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 10px; /* aumenta o espaço interno nas laterais */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30, 30, 47, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.header-actions {
+  margin-right: 20px; /* empurra o botão para dentro */
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botões */
+.btn {
+  background: #b85dd7cc;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b85dd7cc;
+  box-shadow: 0 0 10px #b85dd7cc;
+}
+
+/* Logo */
+.logo img {
+  height: 80px; /* ajusta tamanho do logo */
+  width: auto;
+}
+
+/* Nav */
+.nav-links {
+  display: flex;
+  justify-content: center; /* centraliza */
+  gap: 50px; /* espaçamento entre links */
+  flex: 1; /* ocupa espaço central */
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #700bbd; /* verde no hover */
+}
+
+/* Botão à direita */
+.header-actions .btn {
+  background: #7307a1;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header-actions .btn:hover {
+  background: #730bdc;
+  box-shadow: 0 0 10px #1e0580;
+}
+
+/* Store Buttons */
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10%;
+  background: transparent; /* removido fundo preto */
+}
+
+.store-buttons text {
+  max-width: 500px;
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* deixa a seção mais alta para centralizar */
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #6c63ff, #6d05ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.store-buttons h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #6c63ff, #00c6ff);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(108, 99, 255, 0.6);
+}
+
+.button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.9);
+}
+
+
+
+.hero-mockups {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-mockups img {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #b85dd7cc;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.feature {
+  background: #2d2d44;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.signup-form input[type="email"] {
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+  max-width: 80%;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 12px 25px;
+  background: #ff7e5f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+
+}
+
+.signup-form button:hover {
+  background: #eb5757;
+}
+
+/* Store Buttons - NOVO */
+.store-buttons {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaço uniforme */
+}
+
+.store-buttons img {
+  height: 55px; /* Mesma altura para todos */
+  width: auto;  /* Mantém proporção */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Ajustes extras --- */
+
+/* Botões combinando com o background */
+.btn {
+  background: linear-gradient(135deg, #b85dd7, #3a1c71);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {                
+  background: linear-gradient(135deg, #d07de6, #512d82);
+  box-shadow: 0 0 12px #b85dd7cc;
+  transform: scale(1.05);
+}
+
+/* Container centralizado para o slogan + botões */
+.download-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.download-section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Reaproveitando os botões da loja */
+.download-section .store-buttons {
+  justify-content: center;
+  gap: 25px;
+}
+
+.store-buttons text {
+  display: flex;
+  justify-content: center; /* Centraliza horizontal */
+  align-items: center;     /* Centraliza vertical */
+  height: 100vh;           /* ocupa a tela inteira */
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.store-buttons h1,
+.store-buttons h2,
+.btn {
+  animation: fadeInUp 1s ease forwards;
+}
+footer {
+  background: #1a1a2e;
+  padding: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #6c63ff;
+}
+
